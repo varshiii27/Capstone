@@ -1,40 +1,72 @@
-name: Run Pytest and Allure Report
+name: Run Pytest with Allure Report
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
+    branches: [ main ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      # ---------------------------
+      # Checkout your repository
+      # ---------------------------
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # ---------------------------
+      # Install Python
+      # ---------------------------
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
+      # ---------------------------
+      # Install Chrome & ChromeDriver
+      # ---------------------------
+      - name: Install Chrome and ChromeDriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          CHROME_VERSION=$(google-chrome-stable --version | cut -d " " -f3)
+          wget -q "https://storage.googleapis.com/chrome-for-testing-public/${CHROME_VERSION%.*}/linux64/chromedriver-linux64.zip" || true
+          unzip chromedriver-linux64.zip -d /usr/local/bin/ || true
+
+      # ---------------------------
+      # Install dependencies
+      # ---------------------------
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest allure-pytest
+          pip install pytest allure-pytest selenium
 
+      # ---------------------------
+      # Run pytest (Headless Mode)
+      # ---------------------------
       - name: Run Pytest in Headless Mode
-        run: pytest --alluredir=allure-results
+        run: pytest -v -s --alluredir=allure-results || true
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "varshithaperam27@gmail..com"
-          git config --global user.name "varshiii27"
-
+      # ---------------------------
+      # Generate Allure Report
+      # ---------------------------
       - name: Generate Allure Report
-        uses: simple-elf/allure-report-action@master
+        uses: simple-elf/allure-report-action@v1.8
         with:
           allure_results: allure-results
           allure_report: allure-report
-          gh_pages: gh-pages
+          allure_history: allure-history
+
+      # ---------------------------
+      # Deploy Allure Report to GitHub Pages
+      # ---------------------------
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report
+          publish_branch: gh-pages
