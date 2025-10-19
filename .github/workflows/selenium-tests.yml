@@ -6,38 +6,31 @@ on:
   pull_request:
     branches: [ main ]
 
+# ✅ allow pushing the Allure report to gh-pages
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
       # ---------------------------
-      # Checkout your repository
+      # Checkout Repository
       # ---------------------------
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       # ---------------------------
-      # Install Python
+      # Setup Python
       # ---------------------------
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: '3.10'
 
       # ---------------------------
-      # Install Chrome & ChromeDriver
-      # ---------------------------
-      - name: Install Chrome and ChromeDriver
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
-          CHROME_VERSION=$(google-chrome-stable --version | cut -d " " -f3)
-          wget -q "https://storage.googleapis.com/chrome-for-testing-public/${CHROME_VERSION%.*}/linux64/chromedriver-linux64.zip" || true
-          unzip chromedriver-linux64.zip -d /usr/local/bin/ || true
-
-      # ---------------------------
-      # Install dependencies
+      # Install Dependencies
       # ---------------------------
       - name: Install dependencies
         run: |
@@ -46,10 +39,11 @@ jobs:
           pip install pytest allure-pytest selenium
 
       # ---------------------------
-      # Run pytest (Headless Mode)
+      # Run Pytest in Headless Mode
       # ---------------------------
-      - name: Run Pytest in Headless Mode
-        run: pytest -v -s --alluredir=allure-results || true
+      - name: Run Pytest
+        run: |
+          pytest --headless -v --alluredir=allure-results || true
 
       # ---------------------------
       # Generate Allure Report
@@ -60,6 +54,14 @@ jobs:
           allure_results: allure-results
           allure_report: allure-report
           allure_history: allure-history
+
+      # ---------------------------
+      # Configure Git Identity
+      # ---------------------------
+      - name: Configure Git identity
+        run: |
+          git config --global user.email "varshithaperam27@gmail.com"
+          git config --global user.name "varshiii27"
 
       # ---------------------------
       # Deploy Allure Report to GitHub Pages
