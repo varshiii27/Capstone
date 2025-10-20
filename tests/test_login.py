@@ -25,14 +25,13 @@ def read_login_data():
         return [(row['username'], row['password']) for row in reader]
 
 @pytest.mark.order(2)
-@pytest.mark.parametrize("browser_name", ["chrome", "edge"])
+@pytest.mark.parametrize("browser_name", ["chrome", "edge", "firefox"])
 @pytest.mark.parametrize("username,password", read_login_data())
 def test_login(browser_name, username, password):
-    driver = DriverFactory.get_driver(browser_name=browser_name, headless=True)
-
+    driver = DriverFactory.get_driver(browser_name=browser_name, headless=False)
 
     driver.get("https://www.demoblaze.com")
-    driver.set_window_size(1920, 1080)
+    driver.maximize_window()
     print("\n=== Starting login test ===")
 
     # 🔹 FEATURE 1: Broken Links Detection
@@ -84,6 +83,16 @@ def test_login(browser_name, username, password):
     current_url = driver.current_url
     assert "demoblaze" in current_url, "Unexpected page after refresh."
     print("User is on the expected page after refresh.")
+
+    # 🔹 FEATURE 4: Logout
+    print("\n[Feature] Logging out...")
+    if login_page.is_logged_in():
+        driver.find_element("id", "logout2").click()
+        time.sleep(2)
+        assert not login_page.is_logged_in(), "[Assertion] Logout failed!"
+        print("User logged out successfully.")
+    else:
+        print("User was not logged in; skipping logout.")
 
     print(f"\n=== Login test executed successfully for user: {username} ===")
     driver.quit()

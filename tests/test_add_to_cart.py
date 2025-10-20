@@ -8,7 +8,7 @@ from drivers.driver_factory import DriverFactory
 from pages.product_page import ProductPage
 
 @pytest.mark.order(3)
-@pytest.mark.parametrize("browser_name", ["chrome", "edge"])
+@pytest.mark.parametrize("browser_name", ["chrome", "edge", "firefox"])
 def test_add_to_cart(browser_name):
     print("\n=== Starting Add to Cart Test ===")
     driver = DriverFactory.get_driver(browser_name=browser_name, headless=True)

@@ -74,14 +74,14 @@ def read_cart_table(driver):
 # Test
 # ---------------------------
 @pytest.mark.order(4)
-@pytest.mark.parametrize("browser_name", ["chrome", "edge"])
+@pytest.mark.parametrize("browser_name", ["chrome", "edge", "firefox"])
 @pytest.mark.parametrize(
     "name,country,city,card,month,year",
     read_order_data_from_csv()
 )
 def test_place_order(browser_name,name, country, city, card, month, year):
     print(f"\n=== Starting Place Order Test for {name} ===")
-    driver = DriverFactory.get_driver(browser_name=browser_name, headless=True)
+    driver = DriverFactory.get_driver(browser_name=browser_name, headless=False)
     driver.get("https://www.demoblaze.com")
     driver.maximize_window()
     wait = WebDriverWait(driver, 10)

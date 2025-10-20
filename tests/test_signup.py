@@ -33,7 +33,7 @@ def read_signup_data():
     return data
 
 @pytest.mark.order(1)
-@pytest.mark.parametrize("browser_name", ["chrome", "edge"])
+@pytest.mark.parametrize("browser_name", ["chrome", "edge", "firefox"])
 @pytest.mark.parametrize("username,password", read_signup_data())
 def test_signup(browser_name,username, password):
     print(f"\n=== Starting signup test for user: {username} ===")
