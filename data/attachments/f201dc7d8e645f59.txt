@@ -1,8 +1,9 @@
 
 === Starting Place Order Test for varshitha ===
+[Login] Using already logged-in session
 [Step 1] Opening a product...
 [Step 2] Adding product to cart...
-[Alert] Alert appeared with text: Product added
+[Alert] Alert appeared with text: Product added.
 [Alert] Alert accepted successfully.
 [Step 4] Navigating to Cart page...
 
