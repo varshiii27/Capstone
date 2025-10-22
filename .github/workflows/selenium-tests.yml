@@ -71,15 +71,16 @@ jobs:
         run: zip -r allure-report.zip allure-report
 
       # ---------------------------
-      # Upload ZIP as Artifact
+      # Upload ZIP as Artifact (Updated)
       # ---------------------------
       - name: Upload Allure ZIP
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-report-zip
           path: allure-report.zip
 
-      # ---------------------------
+
+          # ---------------------------
       # Deploy Allure Report to GitHub Pages
       # ---------------------------
       - name: Deploy Allure Report
