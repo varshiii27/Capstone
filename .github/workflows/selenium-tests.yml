@@ -7,49 +7,74 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write
+  contents: write   # Required for publishing to gh-pages
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
+      # ---------------------------
+      # Checkout Repository
+      # ---------------------------
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      # ---------------------------
+      # Setup Python
+      # ---------------------------
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
+      # ---------------------------
+      # Install Dependencies
+      # ---------------------------
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest allure-pytest selenium
 
+      # ---------------------------
+      # Install Allure CLI (manual versioned install)
+      # ---------------------------
       - name: Install Allure CLI
         run: |
-          wget https://github.com/allure-framework/allure2/releases/latest/download/allure-commandline.zip -O allure.zip
+          wget https://github.com/allure-framework/allure2/releases/download/2.29.0/allure-commandline-2.29.0.zip -O allure.zip
           unzip allure.zip -d /opt/allure
-          sudo ln -s /opt/allure/allure-*/bin/allure /usr/bin/allure
+          sudo ln -s /opt/allure/allure-2.29.0/bin/allure /usr/bin/allure
+          allure --version
 
+      # ---------------------------
+      # Run Pytest in Headless Mode
+      # ---------------------------
       - name: Run Pytest
         run: |
-          pytest -v --alluredir=allure-results || true
+          pytest -v --headless --alluredir=allure-results || true
 
+      # ---------------------------
+      # Generate Allure Report
+      # ---------------------------
       - name: Generate Allure Report
         run: |
           allure generate allure-results --clean -o allure-report
 
+      # ---------------------------
+      # Configure Git Identity
+      # ---------------------------
       - name: Configure Git identity
         run: |
           git config --global user.email "varshithaperam27@gmail.com"
           git config --global user.name "varshiii27"
 
+      # ---------------------------
+      # Deploy Allure Report to GitHub Pages
+      # ---------------------------
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: allure-report
           publish_branch: gh-pages
+          publish_dir: allure-report
