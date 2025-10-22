@@ -1,5 +1,0 @@
-
-=== TEST: Radio Button on Chrome ===
-✅ Selected: Yes
-✅ Selected: Impressive
-✅ 'No' radio is disabled

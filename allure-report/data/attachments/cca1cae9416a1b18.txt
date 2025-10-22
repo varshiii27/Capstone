@@ -1,3 +1,0 @@
-
-=== TEST: File Upload on Chrome ===
-✅ File uploaded: C:\fakepath\sql.txt

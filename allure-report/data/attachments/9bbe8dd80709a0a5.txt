@@ -1,3 +1,0 @@
-
-=== TEST: Drag and Drop on Chrome ===
-✅ Target text after drop: Drop here

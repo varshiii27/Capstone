@@ -29,7 +29,7 @@ def remove_ads(driver):
 # -----------------------------
 # Fixture for driver setup
 # -----------------------------
-@pytest.fixture(params=["chrome", "edge", "firefox"])
+@pytest.fixture(params=["chrome", "edge"])
 def setup_driver(request):
     browser_name = request.param
     print(f"\n[Setup] Launching {browser_name.upper()} browser")
