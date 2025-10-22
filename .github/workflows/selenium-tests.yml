@@ -38,25 +38,17 @@ jobs:
           pip install pytest allure-pytest selenium webdriver-manager
 
       # ---------------------------
-      # Install Browsers
-      # ---------------------------
-      - name: Install Browsers
-        run: |
-          sudo apt update
-          sudo apt install -y chromium-browser firefox geckodriver microsoft-edge-stable
-
-      # ---------------------------
       # Download Allure Commandline
       # ---------------------------
       - name: Download Allure Commandline
         run: |
           wget https://github.com/allure-framework/allure2/releases/download/2.35.1/allure-2.35.1.zip -O allure.zip
           unzip allure.zip -d $HOME/allure
-          export PATH="$HOME/allure/allure-2.35.1/bin:$PATH"
+          echo "$HOME/allure/allure-2.35.1/bin" >> $GITHUB_PATH
           allure --version
 
       # ---------------------------
-      # Run Pytest in Headless Mode
+      # Run Pytest (headless browsers)
       # ---------------------------
       - name: Run Pytest
         run: |
