@@ -693,3 +693,123 @@ Object
     - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:268:15|fetch@resource://services-settings/Utils.sys.mjs:219:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:429:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:658:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:496:28|
   - prototype Object
 JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 85: Error: Unknown callback
+1761109554876	geckodriver	INFO	Listening on 127.0.0.1:52112
+1761109557931	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52113" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ASCEND~1\\AppData\\Local\\Temp\\rust_mozprofiletNYb5i"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1761109559056	Marionette	INFO	Marionette enabled
+1761109559245	Marionette	INFO	Listening on port 52120
+WebDriver BiDi listening on ws://127.0.0.1:52113
+Read port: 52120
+1761109559471	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 435: TypeError: c(...).setup is not a function
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=616022154&advertiserID=5481501&campaignID=31418763&creativeID=236648903&placementID=423628833&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=0&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_apacfamily%26utm_content%3Dconversion_banner728x90_OPXCADubai%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615843014&advertiserID=5481501&campaignID=31418751&creativeID=236649035&placementID=423239126&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=0&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner300x250_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=616022139&advertiserID=5481501&campaignID=31418763&creativeID=236648897&placementID=423628851&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=0&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_apacfamily%26utm_content%3Dconversion_banner300x250_OPXCADubai%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=616022157&advertiserID=5481501&campaignID=31418763&creativeID=237218673&placementID=423628830&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=0&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_apacfamily%26utm_content%3Dconversion_banner970x250_OPXCADubai%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1761109576458	Marionette	INFO	Stopped listening on port 52120
+Dynamically enable window occlusion 1
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 117: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 85: Error: Unknown callback
+1761109635985	geckodriver	INFO	Listening on 127.0.0.1:64674
+1761109638998	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64675" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ASCEND~1\\AppData\\Local\\Temp\\rust_mozprofileNfBxip"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1761109640010	Marionette	INFO	Marionette enabled
+1761109640205	Marionette	INFO	Listening on port 64684
+WebDriver BiDi listening on ws://127.0.0.1:64675
+Read port: 64684
+1761109640567	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615842999&advertiserID=5481501&campaignID=31418751&creativeID=236649038&placementID=423239111&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZZ9rXyGCMXwmii7WKpi_a5c&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner970x250_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 435: TypeError: c(...).setup is not a function
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615843002&advertiserID=5481501&campaignID=31418751&creativeID=236711098&placementID=423239114&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZbl-e4Yd1cL1WUSKpLf8DyR&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner728x90_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615843014&advertiserID=5481501&campaignID=31418751&creativeID=236649035&placementID=423239126&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZaQ772a1FFXHtm_JBhS2hhj&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner300x250_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615843014&advertiserID=5481501&campaignID=31418751&creativeID=236649035&placementID=423239126&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZZTA4dfEuTwNyXm_sr_Psda&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner300x250_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://jsc.mgid.com/site/884765.js, line 182: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1761109668866	Marionette	INFO	Stopped listening on port 64684
+Dynamically enable window occlusion 1
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 117: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+JavaScript error: resource://gre/modules/UpdateService.sys.mjs, line 5453: 
+1761109671324	addons.xpi	ERROR	System addon update list error [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no]
+console.error: (new Error("Polling for changes failed: .", "resource://services-settings/remote-settings.sys.mjs", 478))
+console.error: Region.sys.mjs: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 396))
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 85: Error: Unknown callback
+1761109727678	geckodriver	INFO	Listening on 127.0.0.1:63018
+1761109730666	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63019" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ASCEND~1\\AppData\\Local\\Temp\\rust_mozprofile1tjHl6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1761109731765	Marionette	INFO	Marionette enabled
+1761109731976	Marionette	INFO	Listening on port 54741
+WebDriver BiDi listening on ws://127.0.0.1:63019
+Read port: 54741
+1761109732219	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 435: TypeError: c(...).setup is not a function
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=616022154&advertiserID=5481501&campaignID=31418763&creativeID=236648903&placementID=423628833&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZYKtU15_mYiktwg7SpsMU43&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_apacfamily%26utm_content%3Dconversion_banner728x90_OPXCADubai%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615843014&advertiserID=5481501&campaignID=31418751&creativeID=236649035&placementID=423239126&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZZr1FgJnBS3KHbJNHJwXnr9&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner300x250_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=616022157&advertiserID=5481501&campaignID=31418763&creativeID=237218673&placementID=423628830&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZaeKNEGKC84hluMOBun65RX&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_apacfamily%26utm_content%3Dconversion_banner970x250_OPXCADubai%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615843014&advertiserID=5481501&campaignID=31418751&creativeID=236649035&placementID=423239126&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZZNeesrCt2m0tNTRNC1Nne-&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner300x250_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://jsc.mgid.com/site/884765.js, line 182: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1761109830276	Marionette	INFO	Stopped listening on port 54741
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 117: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 85: Error: Unknown callback
+1761114151481	geckodriver	INFO	Listening on 127.0.0.1:57914
+1761114154766	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57915" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ASCEND~1\\AppData\\Local\\Temp\\rust_mozprofilerT9eU0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1761114156648	Marionette	INFO	Marionette enabled
+1761114157024	Marionette	INFO	Listening on port 57922
+WebDriver BiDi listening on ws://127.0.0.1:57915
+Read port: 57922
+1761114157450	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 435: TypeError: c(...).setup is not a function
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615843014&advertiserID=5481501&campaignID=31418751&creativeID=236649035&placementID=423239126&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZajzePIYtlKxQdF2rh1iUt5&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner300x250_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615843002&advertiserID=5481501&campaignID=31418751&creativeID=236711098&placementID=423239114&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZayupXk7Qy4S60VhDrcV2V3&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner728x90_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=615842999&advertiserID=5481501&campaignID=31418751&creativeID=236649038&placementID=423239111&environment=j&siteid=9008513&country=ct=IN&st=&city=7259&dma=0&zp=560008&bw=4&match=AMsySZYSLeN1fsZc8B5lvxrPZRQ-&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/dubai-ready-for-a-surprise%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_indiabrandambassador%26utm_content%3Dconsideration_banner970x250_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://jsc.mgid.com/site/884765.js, line 182: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://jsc.mgid.com/site/884765.js, line 182: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1761114227928	Marionette	INFO	Stopped listening on port 57922
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 117: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 85: Error: Unknown callback
